@@ -1,0 +1,37 @@
+<!DOCTYPE>
+<html ng-app="mini">
+<head>
+  <!-- minimum requirement for Responsive Web design -->
+  <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <!-- other meta for web search -->
+ <meta name="description" content="">
+ <meta name="author" content="">
+  <!-- Bootstrap import -->
+  <!-- Latest compiled and minified CSS bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- Bootstrap theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  <!-- jquery for bootstrap js -->
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!-- Bootstrap compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <!-- Angular import-->
+  <!-- Angular -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+  <!--- Angular route. Needed for routing -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-route.js"></script>
+  <!-- Custom -->
+  <!-- Internal Stylesheet -->
+  <link rel="stylesheet" href="/stylesheets/global.css">
+  <!-- angular controllers -->
+  <!-- angular main declaration and routing controller script -->
+  <script src="/controllers/controller.js"></script>
+  <!-- function controllers -->
+  <script src="/controllers/controllerFunctions.js"></script>
+</head>
+<body>
+  <div class="content" ng-view=""></div>
+</body>
+</html>
