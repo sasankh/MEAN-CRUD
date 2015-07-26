@@ -34,9 +34,9 @@ function retriveOneData(req, res){
 // Update data in the collection
 function updateData(req, res){
   var id = req.params.id;
-  db.crudCollection.findAndModify({_id: mongojs.ObjectId(id)},function(err, docs){
+  db.crudCollection.findAndModify({query: {_id: mongojs.ObjectId(id)},update:{$set:{name:req.body.name, email:req.body.email, phone:req.body.phone}}, new: true},function(err, docs){
     res.json(docs);
-  });
+  });  
 }
 
 // Remove data from the collection

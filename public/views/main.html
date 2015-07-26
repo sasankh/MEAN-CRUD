@@ -1,6 +1,7 @@
 <div id="main" class="container" style="text-align:center">
   <div class="main">
-    <label>MEAN-Stack CRUD</label>
+    <h1>MEAN-Stack CRUD</h1>
+    </br>
     <table style="text-align:center;width:100%">
       <thead>
         <th style="text-align:center">Name</th>
@@ -9,14 +10,15 @@
         <th style="text-align:center">Action</th>
       </thead>
       <tbody>
+        <tr><td>&nbsp;</td></tr>
         <tr>
           <td><input class="form-input" ng-model="userInfo.name"></input></td>
           <td><input class="form-input" ng-model="userInfo.email"></input></td>
           <td><input class="form-input" ng-model="userInfo.phone"></input></td>
-          <td><button class="btn" ng-click="add(userInfo)">Add</button>&nbsp;<button class="btn" ng-click="update(userInfo)">Update</button</td>
+          <td><button class="btn" ng-click="add(userInfo)">Add</button>&nbsp;<button class="btn" ng-click="update(userInfo)">Update</button>&nbsp;<button class="btn" ng-click="clear()">Clear</button></td>
         </tr>
-        <tr>&nbsp;</tr>
-        <tr ng-repeat="user in userList">
+        <tr><td>&nbsp;</td></tr>
+        <tr ng-repeat="user in userList" style="height:50px">
           <td>{{user.name}}</td>
           <td>{{user.email}}</td>
           <td>{{user.phone}}</td>
