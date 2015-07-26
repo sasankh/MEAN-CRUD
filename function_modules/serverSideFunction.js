@@ -12,14 +12,14 @@ cursor.collection.method({collectionField:searchCondition},{fieldsToReturn},func
 // add data to the collection
 function createData(req, res){
   db.crudCollection.insert(req.body,function(err, docs){
-    res.json();
+    res.json(docs);
   });
 }
 
 // retrive all data from the collection
 function retriveAllData(req, res){
   db.crudCollection.find(function(err, docs){    //find returns array
-    res.json();
+    res.json(docs);
   });
 }
 
@@ -27,7 +27,7 @@ function retriveAllData(req, res){
 function retriveOneData(req, res){
   var id = req.params.id;
   db.crudCollection.findOne({_id: mongojs.ObjectId(id)},function(err, docs){    //'findOne' returns single json
-    res.json();
+    res.json(docs);
   });
 }
 
@@ -35,7 +35,7 @@ function retriveOneData(req, res){
 function updateData(req, res){
   var id = req.params.id;
   db.crudCollection.findAndModify({_id: mongojs.ObjectId(id)},function(err, docs){
-    res.json();
+    res.json(docs);
   });
 }
 
@@ -43,7 +43,7 @@ function updateData(req, res){
 function deleteData(req, res){
   var id = req.params.id;
   db.crudCollection.remove({_id: mongojs.ObjectId(id)},function(err, docs){
-    res.json();
+    res.json(docs);
   });
 }
 

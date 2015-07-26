@@ -12,6 +12,6 @@ app.listen(3000);    //asking express to use port 3000
 //server side function
 app.post('/createData', serverFunction.createData);   // create data --> input to collection
 app.get('/retriveAllData', serverFunction.retriveAllData);   // get one data ---> retrive one data from collection
-app.get('/retriveOneData', serverFunction.retriveOneData);   // get one data ---> retrive one data from collection
+app.get('/retriveOneData/:id', serverFunction.retriveOneData);   // get one data ---> retrive one data from collection
 app.put('/updateData/:id', serverFunction.updateData);    // update data ---> update the data
 app.delete('/deleteData/:id',serverFunction.deleteData);   // delere data --> remove data from collection
