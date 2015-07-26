@@ -6,12 +6,6 @@ mini.controller('mainController',mainController);
 
 /*-----------------------------------------------------------------------------*/
 
-//injections
-/*injection not necessary but sometome may be required */
-//mainController.$inject = [$scope, $http];     //injection for mainController
-
-/*-----------------------------------------------------------------------------*/
-
 //controller function
 //main page controller
 function mainController($scope, $http){     //$scope and $http are basic requirements
