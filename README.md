@@ -1,8 +1,8 @@
 # MEAN-CRUD
 
-The web application consists of the minimum requirement for the MEAN CRUD function.
+The web application consists of the minimum requirement for the MEAN CRUD function. Duplication, data validation, etc not performed. Simple CRUD
 
-The system uses: 1) mongojs for database interaction
+The system uses 'mongojs' for database interaction
 
 1) To start the application install the node modules by typing the command "npm install". It will install nodemon, mongojs, express, and body-parser.
 
