@@ -10,16 +10,17 @@
       </thead>
       <tbody>
         <tr>
-          <td><input class="form-input" ng-model="user.name"></input></td>
-          <td><input class="form-input" ng-model="user.email"></input></td>
-          <td><input class="form-input" ng-model="user.phone"></input></td>
-          <td><button class="btn" ng-click="add(user)">Add</button>&nbsp;<button class="btn" ng-click="update(user)">Update</button></td>
+          <td><input class="form-input" ng-model="userInfo.name"></input></td>
+          <td><input class="form-input" ng-model="userInfo.email"></input></td>
+          <td><input class="form-input" ng-model="userInfo.phone"></input></td>
+          <td><button class="btn" ng-click="add(userInfo)">Add</button>&nbsp;<button class="btn" ng-click="update(userInfo)">Update</button</td>
         </tr>
+        <tr>&nbsp;</tr>
         <tr ng-repeat="user in userList">
           <td>{{user.name}}</td>
           <td>{{user.email}}</td>
           <td>{{user.phone}}</td>
-          <td><button class="btn" on-click="select(user._id)">Select</button><<button class="btn" on-click="remove(user._id)">Remove</button></td>
+          <td><button class="btn" ng-click="select(user._id)">Select</button>&nbsp;<button class="btn" ng-click="remove(user._id)">Remove</button></td>
         </tr>
       </tbody>
     </table>

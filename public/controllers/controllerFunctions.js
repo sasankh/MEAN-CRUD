@@ -24,28 +24,30 @@ function mainController($scope, $http){     //$scope and $http are basic require
 
 	refresh();
 
-	$scope.add = function(user){
-		$http.post('/createData', user).success(function(response){
+	$scope.add = function(userInfo){
+		$http.post('/createData', userInfo).success(function(response){
+			$scope.userInfo = "";
 			refresh();
 		});
 	}
 
 	$scope.select = function(id){
-		$http.get('/retriveOneData' + id).success(function(response){
-			$scope.userData = response;
+		console.log(id);
+		$http.get('/retriveOneData/' + id).success(function(response){
+			$scope.userInfo = response;
 		});
 	};
 
 	$scope.remove = function(id){
-		$http.delete('/deleteData' + id).success(function(response){
-			refresh();
-		});
+//		$http.delete('/deleteData/' + id).success(function(response){
+//			refresh();
+//		});
 	};
 
 	$scope.update = function(user){
-		$http.put('/updateData' + id).success(function(response){
-			refresh();
-		});
+//		$http.put('/updateData/' + id).success(function(response){
+//			refresh();
+//		});
 	};
 }
 
