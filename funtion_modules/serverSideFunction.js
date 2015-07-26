@@ -10,7 +10,7 @@ cursor.collection.method({collectionField:searchCondition},{fieldsToReturn},func
 
 //search is performed using MongojsID can be search using criteria
 // add data to the collection
-function addData(req, res){
+function createData(req, res){
   db.crudCollection.insert({_id: mongojs.ObjectId(id)},function(err, docs){
     res.json();
   });
@@ -37,7 +37,8 @@ function deleteData(req, res){
   });
 }
 
-module.exports.addData = addData;
+//exporting function from module
+module.exports.createData = createData;
 module.exports.retriveData = retriveData;
 module.exports.updateData = updateData;
 module.exports.deleteData = deleteData;
