@@ -25,3 +25,6 @@ For collection:- db.createCollection("crudCollection")
 4) Application is running in port '3000' access in browser  at "http://localhost:3000"
 
 Thank you
+
+Note:
+There is also a chef cookbook for windows that downloads, install and runs mongodb as service. pulls the git repository. perform mongorestore of the dump and runs the node server. It is available in windows-chef-cookbook.
