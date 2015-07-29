@@ -6,7 +6,15 @@ The system uses 'mongojs' for database interaction
 
 1) To start the application install the node modules by typing the command "npm install". It will install nodemon, mongojs, express, and body-parser.
 
-2) Creat the mongoDB database and collection. Use the following commands:
+2) Create the mongoDB database and collection.
+
+a) You can restore from the dbDUMP
+
+Go into dbDUMP
+
+Run the command:-  mongorestore --db CRUD CRUD
+
+b)Use the following commands:
 
 For database:- use CRUD
 
@@ -16,4 +24,4 @@ For collection:- db.createCollection("crudCollection")
 
 4) Application is running in port '3000' access in browser  at "http://localhost:3000"
 
-Than you
+Thank you
