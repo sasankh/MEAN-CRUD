@@ -27,4 +27,4 @@ For collection:- db.createCollection("crudCollection")
 Thank you
 
 Note:
-There is also a chef cookbook for windows that downloads, install and runs mongodb as service. pulls the git repository. perform mongorestore of the dump and runs the node server. It is available in windows-chef-cookbook.
+There is also a chef cookbook called "meanCRUD" for windows that downloads, install and runs mongodb as a service. It also pulls the git repository. perform mongorestore of the dump and runs the node server. It is available in windows-chef-cookbook.
